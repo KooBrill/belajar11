@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ini belajar ke 3 ku">
+    <meta name="author" content="Muimsa">
+    <title>Belajar 3</title>
+</head>
+
+<body>
+    <h1>ini belajar ke-3 ku 😋</h1>
+    <h3>ini adalah tabel buat belajar</h3>
+<table>
+    <caption>Daftar Nilai Mahasiswa</caption>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Nilai</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Budi Santoso</td>
+            <td>2024001</td>
+            <td>85</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ani Wijaya</td>
+            <td>2024002</td>
+            <td>92</td>
+            <td>A+</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Rata-rata</td>
+            <td>88.5</td>
+            <td>A</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+<form action="/submit" method="POST" id="form-pendaftaran">
+
+    <!-- Text Input -->
+    <label for="nama">Nama Lengkap:</label>
+    <input type="text" id="nama" name="nama" 
+           placeholder="Masukkan nama" required minlength="3" maxlength="50">
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" 
+           placeholder="contoh@email.com" required>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" 
+           minlength="8" required>
+
+    <!-- Number -->
+    <label for="umur">Umur:</label>
+    <input type="number" id="umur" name="umur" min="17" max="60" value="20">
+
+    <!-- Date -->
+    <label for="tglLahir">Tanggal Lahir:</label>
+    <input type="date" id="tglLahir" name="tglLahir">
+
+    <!-- Radio Button -->
+    <fieldset>
+        <legend>Jenis Kelamin:</legend>
+        <input type="radio" id="pria" name="gender" value="pria">
+        <label for="pria">Pria</label>
+        <input type="radio" id="wanita" name="gender" value="wanita">
+        <label for="wanita">Wanita</label>
+    </fieldset>
+
+    <!-- Checkbox -->
+    <fieldset>
+        <legend>Hobi:</legend>
+        <input type="checkbox" id="coding" name="hobi" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="gaming" name="hobi" value="gaming">
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" id="membaca" name="hobi" value="membaca">
+        <label for="membaca">Membaca</label>
+    </fieldset>
+
+    <!-- Select / Dropdown -->
+    <label for="kota">Kota:</label>
+    <select id="kota" name="kota">
+        <option value="" disabled selected>Pilih kota...</option>
+        <optgroup label="Jawa">
+            <option value="jakarta">Jakarta</option>
+            <option value="surabaya">Surabaya</option>
+        </optgroup>
+        <optgroup label="Sumatera">
+            <option value="medan">Medan</option>
+            <option value="palembang">Palembang</option>
+        </optgroup>
+    </select>
+
+    <!-- Textarea -->
+    <label for="bio">Bio:</label>
+    <textarea id="bio" name="bio" rows="5" cols="40" 
+              placeholder="Ceritakan tentang dirimu..."></textarea>
+
+    <!-- Range Slider -->
+    <label for="skill">Skill Level: <span id="skillVal">50</span>%</label>
+    <input type="range" id="skill" name="skill" min="0" max="100" value="50">
+
+    <!-- Color Picker -->
+    <label for="warna">Warna Favorit:</label>
+    <input type="color" id="warna" name="warna" value="#3498db">
+
+    <!-- File Upload -->
+    <label for="foto">Upload Foto:</label>
+    <input type="file" id="foto" name="foto" accept="image/*">
+
+    <!-- Hidden -->
+    <input type="hidden" name="token" value="abc123">
+
+    <!-- Buttons -->
+    <button type="submit">Daftar</button>
+    <button type="reset">Reset</button>
+</form>
+
+<p>seperti niasa klik <a href="tugas3.html">disini</a> untuk melihat tugas 3</p>
+
+
+
+</body>
+
+</html>
